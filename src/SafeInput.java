@@ -245,4 +245,59 @@ public class SafeInput
         return response;
 
     }
+
+    public static String prettyHeader(String msg)
+    {
+        String header = "";
+        System.out.println("\n" + msg + ": ");
+
+        for (int i = 0; i < 1; i++)
+        {
+
+            for (int f = 0; f <= 60; f++)
+            {
+                System.out.print("*");
+            }
+            System.out.println("");
+
+        }
+        for (int i = 0; i < 1; i++)
+        {
+
+            System.out.print("***");
+            for (int f = 0; f <= 20; f++)
+            {
+                System.out.print(" ");
+            }
+            System.out.print(msg);
+            for (int f = 0; f <= 20; f++)
+            {
+                System.out.print(" ");
+            }
+            System.out.print("***");
+        }
+        for (int i = 0; i < 1; i++)
+        {
+
+            System.out.println(" ");
+            for (int f = 0; f <= 60; f++)
+            {
+                System.out.print("*");
+            }
+            System.out.println("");
+
+
+        }
+        return header;
+    }
+
+
+
+
+
+
+
+
+
+
 }
